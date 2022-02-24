@@ -1,1 +1,1227 @@
-
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2021.7.2"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 335.629,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/segurosDados",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:31:52 GMT"
+						}
+					],
+					"content": {
+						"size": 622,
+						"mimeType": "application/json",
+						"text": "[{\"id\":2,\"nome\":\"Seguro de Vida\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},{\"id\":4,\"nome\":\"Seguro Desemprego\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},{\"id\":5,\"nome\":\"Seguro Teste\",\"regras\":\"Regra testão\",\"valorAno\":240.0}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 335.629,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Seguros"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 579.226,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/apolices/contratar/1/5",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:39:45 GMT"
+						}
+					],
+					"content": {
+						"size": 218,
+						"mimeType": "application/json",
+						"text": "{\"id\":23,\"valorApolice\":150.0,\"descricaoCondicoes\":null,\"seguro\":{\"id\":5,\"nome\":\"Seguro Teste\",\"regras\":\"Regra testão\",\"valorAno\":240.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":null,\"dataCarencia\":null}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 579.226,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Contratar Apolice"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 18.8,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/apolices",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:36:26 GMT"
+						}
+					],
+					"content": {
+						"size": 6436,
+						"mimeType": "application/json",
+						"text": "[{\"id\":21,\"valorApolice\":150000.0,\"descricaoCondicoes\":null,\"seguro\":{\"id\":5,\"nome\":\"Seguro Teste\",\"regras\":\"Regra testão\",\"valorAno\":240.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":null,\"dataCarencia\":null},{\"id\":3,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T12:42:59.689+00:00\",\"dataCarencia\":\"2022-02-25T12:42:59.689+00:00\"},{\"id\":22,\"valorApolice\":15000.0,\"descricaoCondicoes\":null,\"seguro\":{\"id\":5,\"nome\":\"Seguro Teste\",\"regras\":\"Regra testão\",\"valorAno\":240.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":null,\"dataCarencia\":null},{\"id\":2,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T12:02:33.279+00:00\",\"dataCarencia\":\"2022-02-25T12:02:33.279+00:00\"},{\"id\":4,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T13:58:31.307+00:00\",\"dataCarencia\":\"2022-02-25T13:58:31.307+00:00\"},{\"id\":5,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T16:31:33.047+00:00\",\"dataCarencia\":\"2022-02-27T16:31:33.046+00:00\"},{\"id\":6,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T16:31:36.950+00:00\",\"dataCarencia\":\"2022-02-27T16:31:36.950+00:00\"},{\"id\":7,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T16:33:58.477+00:00\",\"dataCarencia\":\"2022-02-27T16:33:58.477+00:00\"},{\"id\":8,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T16:37:47.848+00:00\",\"dataCarencia\":\"2022-02-27T16:37:47.848+00:00\"},{\"id\":9,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T16:37:51.808+00:00\",\"dataCarencia\":\"2022-02-27T16:37:51.808+00:00\"},{\"id\":10,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T16:37:57.139+00:00\",\"dataCarencia\":\"2022-02-27T16:37:57.139+00:00\"},{\"id\":17,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T20:05:45.692+00:00\",\"dataCarencia\":\"2022-02-27T20:05:45.692+00:00\"},{\"id\":18,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T20:34:05.814+00:00\",\"dataCarencia\":\"2022-02-27T20:34:05.814+00:00\"},{\"id\":19,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-12T20:34:09.046+00:00\",\"dataCarencia\":\"2022-02-27T20:34:09.046+00:00\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 18.8,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Apolices"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 55.027,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/contas/create",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"saldo\": 8900.0,\n\t\"senha\": \"1234567\",\n\t\"cliente\": {\n\t\t\"cpf\": \"123.456.252-10\",\n\t\t\"nome\": \"Arthur\",\n\t\t\"dataDeNascimento\": \"2022-02-08T15:28:31.917+00:00\",\n\t\t\"endereco\": {\n\t\t\t\"logradouro\": \"Rua Paissandu\",\n\t\t\t\"bairro\": \"Centro\",\n\t\t\t\"cidade\": \"Rio de Janeiro\",\n\t\t\t\"estado\": \"RJ\",\n\t\t\t\"numero\": \"1523\",\n\t\t\t\"cep\": \"12345-678\"\n\t\t},\n\t\t\"email\": \"arthur@gmail.com\",\n\t\t\"telefone\": \"+55(21)99999-9999\",\n\t\t\"tipo\": \"SUPER\"\n\t},\n\t\"tipoConta\": \"CORRENTE\",\n\t\"cartaoCredito\": {\n\t\t\"numero\": \"9603 4888 7680 8108\",\n\t\t\"bandeira\": \"Visa\",\n\t\t\"senha\": \"123456\",\n\t\t\"limite\": 1000.0,\n\t\t\"valorFatura\": 111.43,\n\t\t\"dataVencimento\": \"2022-02-08T15:28:31.917+00:00\",\n\t\t\"compras\": [\n\t\t\t{\n\t\t\t\t\"nomeProduto\": \"Pacote de Biscoito\",\n\t\t\t\t\"compra\": \"2022-02-09T22:42:35.358+00:00\",\n\t\t\t\t\"valor\": 6.99\n\t\t\t}\n\t\t\t],\n\t\t\"apolices\": [],\n\t\t\"ativo\": true\n\t},\n\t\"cartaoDebito\": {\n\t\t\"numero\": \"8389 1214 1558 9755\",\n\t\t\"bandeira\": \"MasterCard\",\n\t\t\"senha\": \"123456\",\n\t\t\"limitePorTransacao\": 1000.0,\n\t\t\"ativo\": true\n\t},\n\t\"taxa\": 0.0045,\n\t\"dataTaxa\": \"2022-03-08T15:28:31.918+00:00\",\n\t\"saldoString\": \"R$ 8900,00\",\n\t\"list\": [\n\t\t{\n\t\t\t\"numero\": \"91234-5678\",\n\t\t\t\"valor\": 100.0,\n\t\t\t\"operadora\": \"VIVO\"\n\t\t},\n\t\t{\n\t\t\t\"numero\": \"91234-5678\",\n\t\t\t\"valor\": 100.0,\n\t\t\t\"operadora\": \"VIVO\"\n\t\t},\n\t\t{\n\t\t\t\"numero\": \"91234-5678\",\n\t\t\t\"valor\": 100.0,\n\t\t\t\"operadora\": \"VIVO\"\n\t\t},\n\t\t{\n\t\t\t\"numero\": \"2525-2525\",\n\t\t\t\"valor\": 150.0,\n\t\t\t\"operadora\": \"FOURCALL\"\n\t\t}\n\t]\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:33:28 GMT"
+						}
+					],
+					"content": {
+						"size": 1294,
+						"mimeType": "application/json",
+						"text": "{\"id\":10,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":29,\"cpf\":\"123.456.252-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":14,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":10,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":23,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":11,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":8,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":9,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":10,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":11,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 55.027,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Cadastrar Conta"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 54.177,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/contas/read/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:40:38 GMT"
+						}
+					],
+					"content": {
+						"size": 3351,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":1,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":1,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null},{\"id\":2,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-09T22:43:48.163+00:00\",\"valor\":7.0,\"dataString\":null},{\"id\":3,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:09:46.165+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":4,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-09T23:11:08.466+00:00\",\"valor\":8.0,\"dataString\":null},{\"id\":5,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:13:04.475+00:00\",\"valor\":5.0,\"dataString\":null},{\"id\":6,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-09T23:19:30.859+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":7,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:00.679+00:00\",\"valor\":10.99,\"dataString\":null},{\"id\":8,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-10T00:56:17.359+00:00\",\"valor\":40.0,\"dataString\":null},{\"id\":9,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:55.860+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":10,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:06:45.655+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":11,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:07:12.497+00:00\",\"valor\":4.0,\"dataString\":null},{\"id\":12,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:09:42.413+00:00\",\"valor\":23.0,\"dataString\":null},{\"id\":13,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:14:24.158+00:00\",\"valor\":13.0,\"dataString\":null},{\"id\":17,\"nomeProduto\":\"Saco de Bala 7Belo\",\"compra\":\"2022-02-10T01:53:30.911+00:00\",\"valor\":20.59,\"dataString\":null},{\"id\":18,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:54:12.167+00:00\",\"valor\":9.43,\"dataString\":null},{\"id\":19,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:23.095+00:00\",\"valor\":2.0,\"dataString\":null},{\"id\":20,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:53.227+00:00\",\"valor\":100.0,\"dataString\":null}],\"apolices\":[{\"id\":23,\"valorApolice\":150.0,\"descricaoCondicoes\":null,\"seguro\":{\"id\":5,\"nome\":\"Seguro Teste\",\"regras\":\"Regra testão\",\"valorAno\":240.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":null,\"dataCarencia\":null}],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":3,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 54.177,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Conta Por Id"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 147.375,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/contas/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:12:03 GMT"
+						}
+					],
+					"content": {
+						"size": 12553,
+						"mimeType": "application/json",
+						"text": "[{\"id\":6,\"saldo\":2125.0,\"senha\":\"1234567\",\"cliente\":{\"id\":4,\"cpf\":\"444.444.444-44\",\"nome\":\"Karen\",\"dataDeNascimento\":\"2022-02-10T00:40:58.614+00:00\",\"endereco\":{\"id\":4,\"logradouro\":\"Rua 23\",\"bairro\":\"Centro\",\"cidade\":\"Minas Gerais\",\"estado\":\"MG\",\"numero\":\"234\",\"cep\":\"33333-333\"},\"email\":\"karen@gmail.com\",\"telefone\":\"+55(11)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":7,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123444\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T01:38:12.838+00:00\",\"compras\":[{\"id\":14,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:03.538+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":15,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:18.160+00:00\",\"valor\":12.0,\"dataString\":null},{\"id\":16,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-10T01:39:49.305+00:00\",\"valor\":0.4,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T00:40:58.606+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 2125,00\",\"list\":[]},{\"id\":2,\"saldo\":0.0,\"senha\":\"12345678910\",\"cliente\":{\"id\":2,\"cpf\":\"123.456.789-11\",\"nome\":\"Kimberly 2\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":2,\"logradouro\":\"Rua 2\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"124\",\"cep\":\"12345-679\"},\"email\":\"Kimberly@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"POUPANCA\",\"cartaoCredito\":{\"id\":2,\"numero\":\"0181 4587 6282 3666\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":4,\"numero\":\"5316 0621 4690 4972\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":3.0E-4,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},{\"id\":9,\"saldo\":200.0,\"senha\":\"1234567\",\"cliente\":{\"id\":6,\"cpf\":\"123.456.543-21\",\"nome\":\"Pedro Silva\",\"dataDeNascimento\":\"2022-02-10T13:35:46.779+00:00\",\"endereco\":{\"id\":6,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedrosilva@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":9,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T13:51:49.239+00:00\",\"compras\":[{\"id\":22,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T13:52:17.798+00:00\",\"valor\":10.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T13:35:46.750+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 200,00\",\"list\":[]},{\"id\":1,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":1,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":1,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null},{\"id\":2,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-09T22:43:48.163+00:00\",\"valor\":7.0,\"dataString\":null},{\"id\":3,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:09:46.165+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":4,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-09T23:11:08.466+00:00\",\"valor\":8.0,\"dataString\":null},{\"id\":5,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:13:04.475+00:00\",\"valor\":5.0,\"dataString\":null},{\"id\":6,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-09T23:19:30.859+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":7,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:00.679+00:00\",\"valor\":10.99,\"dataString\":null},{\"id\":8,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-10T00:56:17.359+00:00\",\"valor\":40.0,\"dataString\":null},{\"id\":9,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:55.860+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":10,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:06:45.655+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":11,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:07:12.497+00:00\",\"valor\":4.0,\"dataString\":null},{\"id\":12,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:09:42.413+00:00\",\"valor\":23.0,\"dataString\":null},{\"id\":13,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:14:24.158+00:00\",\"valor\":13.0,\"dataString\":null},{\"id\":17,\"nomeProduto\":\"Saco de Bala 7Belo\",\"compra\":\"2022-02-10T01:53:30.911+00:00\",\"valor\":20.59,\"dataString\":null},{\"id\":18,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:54:12.167+00:00\",\"valor\":9.43,\"dataString\":null},{\"id\":19,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:23.095+00:00\",\"valor\":2.0,\"dataString\":null},{\"id\":20,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:53.227+00:00\",\"valor\":100.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":3,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]},{\"id\":10,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":29,\"cpf\":\"123.456.252-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":14,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":10,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":23,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":11,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[]},{\"id\":12,\"saldo\":0.0,\"senha\":\"1234\",\"cliente\":{\"id\":31,\"cpf\":\"123.334.789-10\",\"nome\":\"Aleatorio\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":16,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":14,\"numero\":\"3164 7291 1742 7095\",\"bandeira\":\"visa\",\"senha\":\"1234\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-22T21:02:10.057+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":15,\"numero\":\"8600 8499 8159 9091\",\"bandeira\":\"mastercard\",\"senha\":\"1234\",\"limitePorTransacao\":1500.0,\"ativo\":true},\"taxa\":0.0,\"dataTaxa\":\"2022-02-22T21:02:10.057+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},{\"id\":4,\"saldo\":208.0,\"senha\":\"1234567\",\"cliente\":{\"id\":3,\"cpf\":\"109.876.543-21\",\"nome\":\"Joao\",\"dataDeNascimento\":\"2022-02-08T20:44:28.038+00:00\",\"endereco\":{\"id\":3,\"logradouro\":\"Rua Getúlio Vargas\",\"bairro\":\"Tiradentes\",\"cidade\":\"Belo Horizonte\",\"estado\":\"MG\",\"numero\":\"733\",\"cep\":\"12332-123\"},\"email\":\"joaovictor@gmail.com\",\"telefone\":\"+55(31)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"POUPANCA\",\"cartaoCredito\":null,\"cartaoDebito\":null,\"taxa\":3.0E-4,\"dataTaxa\":\"2022-02-08T20:44:28.031+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 208,00\",\"list\":[]},{\"id\":13,\"saldo\":0.0,\"senha\":\"1234\",\"cliente\":{\"id\":32,\"cpf\":\"123.334.789-10\",\"nome\":\"Aleatorio\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":17,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":16,\"numero\":\"7333 3491 9326 5170\",\"bandeira\":\"visa\",\"senha\":\"1234\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-22T21:04:24.603+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":17,\"numero\":\"4023 2873 0160 0381\",\"bandeira\":\"mastercard\",\"senha\":\"1234\",\"limitePorTransacao\":1500.0,\"ativo\":true},\"taxa\":0.0,\"dataTaxa\":\"2022-02-22T21:04:24.603+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},{\"id\":14,\"saldo\":0.0,\"senha\":\"1234\",\"cliente\":{\"id\":2,\"cpf\":\"123.456.789-11\",\"nome\":\"Kimberly 2\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":2,\"logradouro\":\"Rua 2\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"124\",\"cep\":\"12345-679\"},\"email\":\"Kimberly@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":18,\"numero\":\"1899 3265 8327 1729\",\"bandeira\":\"visa\",\"senha\":\"1234\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-22T21:11:29.263+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":19,\"numero\":\"0172 9794 4984 0588\",\"bandeira\":\"mastercard\",\"senha\":\"1234\",\"limitePorTransacao\":1500.0,\"ativo\":true},\"taxa\":0.0,\"dataTaxa\":\"2022-02-22T21:11:29.263+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},{\"id\":3,\"saldo\":0.0,\"senha\":\"1234567\",\"cliente\":{\"id\":3,\"cpf\":\"109.876.543-21\",\"nome\":\"Joao\",\"dataDeNascimento\":\"2022-02-08T20:44:28.038+00:00\",\"endereco\":{\"id\":3,\"logradouro\":\"Rua Getúlio Vargas\",\"bairro\":\"Tiradentes\",\"cidade\":\"Belo Horizonte\",\"estado\":\"MG\",\"numero\":\"733\",\"cep\":\"12332-123\"},\"email\":\"joaovictor@gmail.com\",\"telefone\":\"+55(31)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":6,\"numero\":\"5316 0621 7690 4973\",\"bandeira\":\"Visa\",\"senha\":\"123444\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-09T22:09:01.975+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-08T20:44:28.031+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},{\"id\":8,\"saldo\":665.0,\"senha\":\"1234567\",\"cliente\":{\"id\":5,\"cpf\":\"123.123.123-44\",\"nome\":\"Pedro Alves\",\"dataDeNascimento\":\"2022-02-10T12:38:44.577+00:00\",\"endereco\":{\"id\":5,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedroalves@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":8,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T12:41:24.134+00:00\",\"compras\":[{\"id\":21,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T12:41:51.705+00:00\",\"valor\":10.0,\"dataString\":null}],\"apolices\":[{\"id\":3,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T12:42:59.689+00:00\",\"dataCarencia\":\"2022-02-25T12:42:59.689+00:00\"}],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T12:38:44.570+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 665,00\",\"list\":[]}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 147.375,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Todas Contas"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 22.166,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/pixs/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\t\"chavePix\": \"CPF\",\n\t\t\"valor\": 100.0,\n\t\t\"conteudoChave\": \"123.456.543-21\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Length",
+							"value": "0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:19:23 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 22.166,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Transação Pix"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 78.666,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/pixs",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:12:36 GMT"
+						}
+					],
+					"content": {
+						"size": 26218,
+						"mimeType": "application/json",
+						"text": "[{\"id\":2,\"chavePix\":\"CPF\",\"valor\":100.0,\"conteudoChave\":\"123.456.789-11\",\"conta\":{\"id\":2,\"saldo\":0.0,\"senha\":\"12345678910\",\"cliente\":{\"id\":2,\"cpf\":\"123.456.789-11\",\"nome\":\"Kimberly 2\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":2,\"logradouro\":\"Rua 2\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"124\",\"cep\":\"12345-679\"},\"email\":\"Kimberly@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"POUPANCA\",\"cartaoCredito\":{\"id\":2,\"numero\":\"0181 4587 6282 3666\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":4,\"numero\":\"5316 0621 4690 4972\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":3.0E-4,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},\"ativado\":true},{\"id\":6,\"chavePix\":\"CPF\",\"valor\":125.0,\"conteudoChave\":\"444.444.444-44\",\"conta\":{\"id\":6,\"saldo\":2125.0,\"senha\":\"1234567\",\"cliente\":{\"id\":4,\"cpf\":\"444.444.444-44\",\"nome\":\"Karen\",\"dataDeNascimento\":\"2022-02-10T00:40:58.614+00:00\",\"endereco\":{\"id\":4,\"logradouro\":\"Rua 23\",\"bairro\":\"Centro\",\"cidade\":\"Minas Gerais\",\"estado\":\"MG\",\"numero\":\"234\",\"cep\":\"33333-333\"},\"email\":\"karen@gmail.com\",\"telefone\":\"+55(11)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":7,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123444\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T01:38:12.838+00:00\",\"compras\":[{\"id\":14,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:03.538+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":15,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:18.160+00:00\",\"valor\":12.0,\"dataString\":null},{\"id\":16,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-10T01:39:49.305+00:00\",\"valor\":0.4,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T00:40:58.606+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 2125,00\",\"list\":[]},\"ativado\":true},{\"id\":7,\"chavePix\":\"EMAIL\",\"valor\":125.0,\"conteudoChave\":\"karen@gmail.com\",\"conta\":{\"id\":6,\"saldo\":2125.0,\"senha\":\"1234567\",\"cliente\":{\"id\":4,\"cpf\":\"444.444.444-44\",\"nome\":\"Karen\",\"dataDeNascimento\":\"2022-02-10T00:40:58.614+00:00\",\"endereco\":{\"id\":4,\"logradouro\":\"Rua 23\",\"bairro\":\"Centro\",\"cidade\":\"Minas Gerais\",\"estado\":\"MG\",\"numero\":\"234\",\"cep\":\"33333-333\"},\"email\":\"karen@gmail.com\",\"telefone\":\"+55(11)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":7,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123444\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T01:38:12.838+00:00\",\"compras\":[{\"id\":14,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:03.538+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":15,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:18.160+00:00\",\"valor\":12.0,\"dataString\":null},{\"id\":16,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-10T01:39:49.305+00:00\",\"valor\":0.4,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T00:40:58.606+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 2125,00\",\"list\":[]},\"ativado\":true},{\"id\":8,\"chavePix\":\"TELEFONE\",\"valor\":125.0,\"conteudoChave\":\"+55(11)98765-4321\",\"conta\":{\"id\":6,\"saldo\":2125.0,\"senha\":\"1234567\",\"cliente\":{\"id\":4,\"cpf\":\"444.444.444-44\",\"nome\":\"Karen\",\"dataDeNascimento\":\"2022-02-10T00:40:58.614+00:00\",\"endereco\":{\"id\":4,\"logradouro\":\"Rua 23\",\"bairro\":\"Centro\",\"cidade\":\"Minas Gerais\",\"estado\":\"MG\",\"numero\":\"234\",\"cep\":\"33333-333\"},\"email\":\"karen@gmail.com\",\"telefone\":\"+55(11)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":7,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123444\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T01:38:12.838+00:00\",\"compras\":[{\"id\":14,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:03.538+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":15,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:18.160+00:00\",\"valor\":12.0,\"dataString\":null},{\"id\":16,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-10T01:39:49.305+00:00\",\"valor\":0.4,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T00:40:58.606+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 2125,00\",\"list\":[]},\"ativado\":true},{\"id\":9,\"chavePix\":\"ALEATORIO\",\"valor\":15.0,\"conteudoChave\":\"22098840\",\"conta\":{\"id\":6,\"saldo\":2125.0,\"senha\":\"1234567\",\"cliente\":{\"id\":4,\"cpf\":\"444.444.444-44\",\"nome\":\"Karen\",\"dataDeNascimento\":\"2022-02-10T00:40:58.614+00:00\",\"endereco\":{\"id\":4,\"logradouro\":\"Rua 23\",\"bairro\":\"Centro\",\"cidade\":\"Minas Gerais\",\"estado\":\"MG\",\"numero\":\"234\",\"cep\":\"33333-333\"},\"email\":\"karen@gmail.com\",\"telefone\":\"+55(11)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":7,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123444\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T01:38:12.838+00:00\",\"compras\":[{\"id\":14,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:03.538+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":15,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:39:18.160+00:00\",\"valor\":12.0,\"dataString\":null},{\"id\":16,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-10T01:39:49.305+00:00\",\"valor\":0.4,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T00:40:58.606+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 2125,00\",\"list\":[]},\"ativado\":true},{\"id\":1,\"chavePix\":\"CPF\",\"valor\":100.0,\"conteudoChave\":\"123.456.789-10\",\"conta\":{\"id\":1,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":1,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":1,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null},{\"id\":2,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-09T22:43:48.163+00:00\",\"valor\":7.0,\"dataString\":null},{\"id\":3,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:09:46.165+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":4,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-09T23:11:08.466+00:00\",\"valor\":8.0,\"dataString\":null},{\"id\":5,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:13:04.475+00:00\",\"valor\":5.0,\"dataString\":null},{\"id\":6,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-09T23:19:30.859+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":7,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:00.679+00:00\",\"valor\":10.99,\"dataString\":null},{\"id\":8,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-10T00:56:17.359+00:00\",\"valor\":40.0,\"dataString\":null},{\"id\":9,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:55.860+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":10,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:06:45.655+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":11,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:07:12.497+00:00\",\"valor\":4.0,\"dataString\":null},{\"id\":12,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:09:42.413+00:00\",\"valor\":23.0,\"dataString\":null},{\"id\":13,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:14:24.158+00:00\",\"valor\":13.0,\"dataString\":null},{\"id\":17,\"nomeProduto\":\"Saco de Bala 7Belo\",\"compra\":\"2022-02-10T01:53:30.911+00:00\",\"valor\":20.59,\"dataString\":null},{\"id\":18,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:54:12.167+00:00\",\"valor\":9.43,\"dataString\":null},{\"id\":19,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:23.095+00:00\",\"valor\":2.0,\"dataString\":null},{\"id\":20,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:53.227+00:00\",\"valor\":100.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":3,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]},\"ativado\":true},{\"id\":3,\"chavePix\":\"EMAIL\",\"valor\":100.0,\"conteudoChave\":\"arthur@gmail.com\",\"conta\":{\"id\":1,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":1,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":1,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null},{\"id\":2,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-09T22:43:48.163+00:00\",\"valor\":7.0,\"dataString\":null},{\"id\":3,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:09:46.165+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":4,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-09T23:11:08.466+00:00\",\"valor\":8.0,\"dataString\":null},{\"id\":5,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:13:04.475+00:00\",\"valor\":5.0,\"dataString\":null},{\"id\":6,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-09T23:19:30.859+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":7,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:00.679+00:00\",\"valor\":10.99,\"dataString\":null},{\"id\":8,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-10T00:56:17.359+00:00\",\"valor\":40.0,\"dataString\":null},{\"id\":9,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:55.860+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":10,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:06:45.655+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":11,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:07:12.497+00:00\",\"valor\":4.0,\"dataString\":null},{\"id\":12,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:09:42.413+00:00\",\"valor\":23.0,\"dataString\":null},{\"id\":13,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:14:24.158+00:00\",\"valor\":13.0,\"dataString\":null},{\"id\":17,\"nomeProduto\":\"Saco de Bala 7Belo\",\"compra\":\"2022-02-10T01:53:30.911+00:00\",\"valor\":20.59,\"dataString\":null},{\"id\":18,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:54:12.167+00:00\",\"valor\":9.43,\"dataString\":null},{\"id\":19,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:23.095+00:00\",\"valor\":2.0,\"dataString\":null},{\"id\":20,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:53.227+00:00\",\"valor\":100.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":3,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]},\"ativado\":true},{\"id\":4,\"chavePix\":\"TELEFONE\",\"valor\":100.0,\"conteudoChave\":\"+55(21)99999-9999\",\"conta\":{\"id\":1,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":1,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":1,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null},{\"id\":2,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-09T22:43:48.163+00:00\",\"valor\":7.0,\"dataString\":null},{\"id\":3,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:09:46.165+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":4,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-09T23:11:08.466+00:00\",\"valor\":8.0,\"dataString\":null},{\"id\":5,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:13:04.475+00:00\",\"valor\":5.0,\"dataString\":null},{\"id\":6,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-09T23:19:30.859+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":7,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:00.679+00:00\",\"valor\":10.99,\"dataString\":null},{\"id\":8,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-10T00:56:17.359+00:00\",\"valor\":40.0,\"dataString\":null},{\"id\":9,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:55.860+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":10,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:06:45.655+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":11,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:07:12.497+00:00\",\"valor\":4.0,\"dataString\":null},{\"id\":12,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:09:42.413+00:00\",\"valor\":23.0,\"dataString\":null},{\"id\":13,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:14:24.158+00:00\",\"valor\":13.0,\"dataString\":null},{\"id\":17,\"nomeProduto\":\"Saco de Bala 7Belo\",\"compra\":\"2022-02-10T01:53:30.911+00:00\",\"valor\":20.59,\"dataString\":null},{\"id\":18,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:54:12.167+00:00\",\"valor\":9.43,\"dataString\":null},{\"id\":19,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:23.095+00:00\",\"valor\":2.0,\"dataString\":null},{\"id\":20,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:53.227+00:00\",\"valor\":100.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":3,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]},\"ativado\":true},{\"id\":5,\"chavePix\":\"ALEATORIO\",\"valor\":100.0,\"conteudoChave\":\"59329164\",\"conta\":{\"id\":1,\"saldo\":8900.0,\"senha\":\"1234567\",\"cliente\":{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":1,\"numero\":\"9603 4888 7680 8108\",\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":111.43,\"dataVencimento\":\"2022-02-08T15:28:31.917+00:00\",\"compras\":[{\"id\":1,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T22:42:35.358+00:00\",\"valor\":6.99,\"dataString\":null},{\"id\":2,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-09T22:43:48.163+00:00\",\"valor\":7.0,\"dataString\":null},{\"id\":3,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:09:46.165+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":4,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-09T23:11:08.466+00:00\",\"valor\":8.0,\"dataString\":null},{\"id\":5,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-09T23:13:04.475+00:00\",\"valor\":5.0,\"dataString\":null},{\"id\":6,\"nomeProduto\":\"Teste\",\"compra\":\"2022-02-09T23:19:30.859+00:00\",\"valor\":10.0,\"dataString\":null},{\"id\":7,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:00.679+00:00\",\"valor\":10.99,\"dataString\":null},{\"id\":8,\"nomeProduto\":\"Salgadinho\",\"compra\":\"2022-02-10T00:56:17.359+00:00\",\"valor\":40.0,\"dataString\":null},{\"id\":9,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T00:56:55.860+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":10,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:06:45.655+00:00\",\"valor\":100.0,\"dataString\":null},{\"id\":11,\"nomeProduto\":\"Outro pacote de Biscoito\",\"compra\":\"2022-02-10T01:07:12.497+00:00\",\"valor\":4.0,\"dataString\":null},{\"id\":12,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:09:42.413+00:00\",\"valor\":23.0,\"dataString\":null},{\"id\":13,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:14:24.158+00:00\",\"valor\":13.0,\"dataString\":null},{\"id\":17,\"nomeProduto\":\"Saco de Bala 7Belo\",\"compra\":\"2022-02-10T01:53:30.911+00:00\",\"valor\":20.59,\"dataString\":null},{\"id\":18,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T01:54:12.167+00:00\",\"valor\":9.43,\"dataString\":null},{\"id\":19,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:23.095+00:00\",\"valor\":2.0,\"dataString\":null},{\"id\":20,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T03:04:53.227+00:00\",\"valor\":100.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":3,\"numero\":\"8389 1214 1558 9755\",\"bandeira\":\"MasterCard\",\"senha\":\"123456\",\"limitePorTransacao\":1000.0,\"ativo\":true},\"taxa\":0.0045,\"dataTaxa\":\"2022-03-08T15:28:31.918+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 8900,00\",\"list\":[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]},\"ativado\":true},{\"id\":10,\"chavePix\":\"CPF\",\"valor\":100.0,\"conteudoChave\":\"123.123.123-44\",\"conta\":{\"id\":8,\"saldo\":665.0,\"senha\":\"1234567\",\"cliente\":{\"id\":5,\"cpf\":\"123.123.123-44\",\"nome\":\"Pedro Alves\",\"dataDeNascimento\":\"2022-02-10T12:38:44.577+00:00\",\"endereco\":{\"id\":5,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedroalves@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":8,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T12:41:24.134+00:00\",\"compras\":[{\"id\":21,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T12:41:51.705+00:00\",\"valor\":10.0,\"dataString\":null}],\"apolices\":[{\"id\":3,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T12:42:59.689+00:00\",\"dataCarencia\":\"2022-02-25T12:42:59.689+00:00\"}],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T12:38:44.570+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 665,00\",\"list\":[]},\"ativado\":true},{\"id\":11,\"chavePix\":\"EMAIL\",\"valor\":100.0,\"conteudoChave\":\"pedroalves@gmail.com\",\"conta\":{\"id\":8,\"saldo\":665.0,\"senha\":\"1234567\",\"cliente\":{\"id\":5,\"cpf\":\"123.123.123-44\",\"nome\":\"Pedro Alves\",\"dataDeNascimento\":\"2022-02-10T12:38:44.577+00:00\",\"endereco\":{\"id\":5,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedroalves@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":8,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T12:41:24.134+00:00\",\"compras\":[{\"id\":21,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T12:41:51.705+00:00\",\"valor\":10.0,\"dataString\":null}],\"apolices\":[{\"id\":3,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T12:42:59.689+00:00\",\"dataCarencia\":\"2022-02-25T12:42:59.689+00:00\"}],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T12:38:44.570+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 665,00\",\"list\":[]},\"ativado\":true},{\"id\":12,\"chavePix\":\"ALEATORIO\",\"valor\":100.0,\"conteudoChave\":\"6463358\",\"conta\":{\"id\":8,\"saldo\":665.0,\"senha\":\"1234567\",\"cliente\":{\"id\":5,\"cpf\":\"123.123.123-44\",\"nome\":\"Pedro Alves\",\"dataDeNascimento\":\"2022-02-10T12:38:44.577+00:00\",\"endereco\":{\"id\":5,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedroalves@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":8,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T12:41:24.134+00:00\",\"compras\":[{\"id\":21,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T12:41:51.705+00:00\",\"valor\":10.0,\"dataString\":null}],\"apolices\":[{\"id\":3,\"valorApolice\":36.0,\"descricaoCondicoes\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"seguro\":{\"id\":3,\"nome\":\"Seguro Invalidez\",\"regras\":\"Indenização por despesas médico-hospitalares, ou por perda parcial ou total do funcionamento dos membros ou órgãos;\",\"valorAno\":36.0},\"dataString1\":null,\"dataString2\":null,\"dataAssinatura\":\"2022-02-10T12:42:59.689+00:00\",\"dataCarencia\":\"2022-02-25T12:42:59.689+00:00\"}],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T12:38:44.570+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 665,00\",\"list\":[]},\"ativado\":true},{\"id\":13,\"chavePix\":\"CPF\",\"valor\":100.0,\"conteudoChave\":\"123.456.543-21\",\"conta\":{\"id\":9,\"saldo\":200.0,\"senha\":\"1234567\",\"cliente\":{\"id\":6,\"cpf\":\"123.456.543-21\",\"nome\":\"Pedro Silva\",\"dataDeNascimento\":\"2022-02-10T13:35:46.779+00:00\",\"endereco\":{\"id\":6,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedrosilva@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":9,\"numero\":null,\"bandeira\":\"Visa\",\"senha\":\"123456\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-10T13:51:49.239+00:00\",\"compras\":[{\"id\":22,\"nomeProduto\":\"Pacote de Biscoito\",\"compra\":\"2022-02-10T13:52:17.798+00:00\",\"valor\":10.0,\"dataString\":null}],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":null,\"taxa\":0.0045,\"dataTaxa\":\"2022-02-10T13:35:46.750+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 200,00\",\"list\":[]},\"ativado\":true},{\"id\":16,\"chavePix\":\"CPF\",\"valor\":0.0,\"conteudoChave\":\"123.334.789-10\",\"conta\":{\"id\":13,\"saldo\":0.0,\"senha\":\"1234\",\"cliente\":{\"id\":32,\"cpf\":\"123.334.789-10\",\"nome\":\"Aleatorio\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":17,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":16,\"numero\":\"7333 3491 9326 5170\",\"bandeira\":\"visa\",\"senha\":\"1234\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-22T21:04:24.603+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":17,\"numero\":\"4023 2873 0160 0381\",\"bandeira\":\"mastercard\",\"senha\":\"1234\",\"limitePorTransacao\":1500.0,\"ativo\":true},\"taxa\":0.0,\"dataTaxa\":\"2022-02-22T21:04:24.603+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},\"ativado\":true},{\"id\":17,\"chavePix\":\"CPF\",\"valor\":0.0,\"conteudoChave\":\"123.456.789-11\",\"conta\":{\"id\":14,\"saldo\":0.0,\"senha\":\"1234\",\"cliente\":{\"id\":2,\"cpf\":\"123.456.789-11\",\"nome\":\"Kimberly 2\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":2,\"logradouro\":\"Rua 2\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"124\",\"cep\":\"12345-679\"},\"email\":\"Kimberly@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},\"tipoConta\":\"CORRENTE\",\"cartaoCredito\":{\"id\":18,\"numero\":\"1899 3265 8327 1729\",\"bandeira\":\"visa\",\"senha\":\"1234\",\"limite\":1000.0,\"valorFatura\":0.0,\"dataVencimento\":\"2022-02-22T21:11:29.263+00:00\",\"compras\":[],\"apolices\":[],\"dataString\":null,\"ativo\":true},\"cartaoDebito\":{\"id\":19,\"numero\":\"0172 9794 4984 0588\",\"bandeira\":\"mastercard\",\"senha\":\"1234\",\"limitePorTransacao\":1500.0,\"ativo\":true},\"taxa\":0.0,\"dataTaxa\":\"2022-02-22T21:11:29.263+00:00\",\"correnteBool\":false,\"poupancaBool\":false,\"saldoString\":\"R$ 0,00\",\"list\":[]},\"ativado\":true}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 78.666,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Pixes"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 31.444,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:8080/api/clientes/delete/28",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:12:48 GMT"
+						}
+					],
+					"content": {
+						"size": 331,
+						"mimeType": "application/json",
+						"text": "{\"id\":28,\"cpf\":\"123.333.789-11\",\"nome\":\"Aleatorio God\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":13,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 31.444,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete Cliente"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 31.173,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:8080/api/clientes/update/28",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"cpf\": \"123.333.789-11\",\n\t\"nome\": \"Aleatorio God\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 500,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:11:57 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "close"
+						}
+					],
+					"content": {
+						"size": 6142,
+						"mimeType": "application/json",
+						"text": "{\"timestamp\":\"2022-02-22T21:11:57.290+00:00\",\"status\":500,\"error\":\"Internal Server Error\",\"trace\":\"java.util.NoSuchElementException: No value present\\r\\n\\tat java.base/java.util.Optional.get(Optional.java:143)\\r\\n\\tat com.arthur.NextGeneration.model.services.ClienteService.findById(ClienteService.java:54)\\r\\n\\tat com.arthur.NextGeneration.api.ClienteResource.updateCliente(ClienteResource.java:43)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\\r\\n\\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)\\r\\n\\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\\r\\n\\tat java.base/java.lang.reflect.Method.invoke(Method.java:568)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)\\r\\n\\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\\r\\n\\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\\r\\n\\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)\\r\\n\\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:684)\\r\\n\\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\\r\\n\\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:764)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:67)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\\r\\n\\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\\r\\n\\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\\r\\n\\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)\\r\\n\\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\\r\\n\\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)\\r\\n\\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\\r\\n\\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\\r\\n\\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\\r\\n\\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)\\r\\n\\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)\\r\\n\\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\\r\\n\\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)\\r\\n\\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)\\r\\n\\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\\r\\n\\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\\r\\n\\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\\r\\n\\tat java.base/java.lang.Thread.run(Thread.java:833)\\r\\n\",\"message\":\"No value present\",\"path\":\"/api/clientes/update/28\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 31.173,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update Cliente"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 398.93,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/clientes/create/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"cpf\": \"123.334.789-10\",\n\t\"nome\": \"Aleatorio\",\n\t\"dataDeNascimento\": \"2022-02-08T15:28:31.917+00:00\",\n\t\"endereco\": {\n\t\t\"logradouro\": \"Rua 3\",\n\t\t\"bairro\": \"Centro\",\n\t\t\"cidade\": \"Rio de Janeiro\",\n\t\t\"estado\": \"RJ\",\n\t\t\"numero\": \"1523\",\n\t\t\"cep\": \"12345-678\"\n\t},\n\t\"email\": \"random@gmail.com\",\n\t\"telefone\": \"+55(21)99999-9999\",\n\t\"tipo\": \"COMUM\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:04:24 GMT"
+						}
+					],
+					"content": {
+						"size": 327,
+						"mimeType": "application/json",
+						"text": "{\"id\":32,\"cpf\":\"123.334.789-10\",\"nome\":\"Aleatorio\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":17,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 398.93,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar/Cadastrar Cliente"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 21.845,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/clientes/read/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:07:13 GMT"
+						}
+					],
+					"content": {
+						"size": 330,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 21.845,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Cliente por Id"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 137.86599999999999,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/clientes",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 21:10:32 GMT"
+						}
+					],
+					"content": {
+						"size": 3324,
+						"mimeType": "application/json",
+						"text": "[{\"id\":2,\"cpf\":\"123.456.789-11\",\"nome\":\"Kimberly\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":2,\"logradouro\":\"Rua 2\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"124\",\"cep\":\"12345-679\"},\"email\":\"Kimberly@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":3,\"cpf\":\"109.876.543-21\",\"nome\":\"Joao\",\"dataDeNascimento\":\"2022-02-08T20:44:28.038+00:00\",\"endereco\":{\"id\":3,\"logradouro\":\"Rua Getúlio Vargas\",\"bairro\":\"Tiradentes\",\"cidade\":\"Belo Horizonte\",\"estado\":\"MG\",\"numero\":\"733\",\"cep\":\"12332-123\"},\"email\":\"joaovictor@gmail.com\",\"telefone\":\"+55(31)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":1,\"cpf\":\"123.456.789-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":1,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},{\"id\":4,\"cpf\":\"444.444.444-44\",\"nome\":\"Karen\",\"dataDeNascimento\":\"2022-02-10T00:40:58.614+00:00\",\"endereco\":{\"id\":4,\"logradouro\":\"Rua 23\",\"bairro\":\"Centro\",\"cidade\":\"Minas Gerais\",\"estado\":\"MG\",\"numero\":\"234\",\"cep\":\"33333-333\"},\"email\":\"karen@gmail.com\",\"telefone\":\"+55(11)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":5,\"cpf\":\"123.123.123-44\",\"nome\":\"Pedro Alves\",\"dataDeNascimento\":\"2022-02-10T12:38:44.577+00:00\",\"endereco\":{\"id\":5,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedroalves@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":6,\"cpf\":\"123.456.543-21\",\"nome\":\"Pedro Silva\",\"dataDeNascimento\":\"2022-02-10T13:35:46.779+00:00\",\"endereco\":{\"id\":6,\"logradouro\":\"Rua Pedro II\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"135\",\"cep\":\"11334-567\"},\"email\":\"pedrosilva@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":26,\"cpf\":\"109.876.543-33\",\"nome\":\"Art God\",\"dataDeNascimento\":\"2022-02-08T20:44:28.038+00:00\",\"endereco\":{\"id\":10,\"logradouro\":\"Rua Getúlio Vargas\",\"bairro\":\"Tiradentes\",\"cidade\":\"Belo Horizonte\",\"estado\":\"MG\",\"numero\":\"733\",\"cep\":\"12332-123\"},\"email\":\"art@gmail.com\",\"telefone\":\"+55(31)98765-4321\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":29,\"cpf\":\"123.456.252-10\",\"nome\":\"Arthur\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":14,\"logradouro\":\"Rua Paissandu\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"arthur@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"SUPER\",\"dataString\":null},{\"id\":31,\"cpf\":\"123.334.789-10\",\"nome\":\"Aleatorio\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":16,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null},{\"id\":32,\"cpf\":\"123.334.789-10\",\"nome\":\"Aleatorio\",\"dataDeNascimento\":\"2022-02-08T15:28:31.917+00:00\",\"endereco\":{\"id\":17,\"logradouro\":\"Rua 3\",\"bairro\":\"Centro\",\"cidade\":\"Rio de Janeiro\",\"estado\":\"RJ\",\"numero\":\"1523\",\"cep\":\"12345-678\"},\"email\":\"random@gmail.com\",\"telefone\":\"+55(21)99999-9999\",\"tipo\":\"COMUM\",\"dataString\":null}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 137.86599999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar Todos Clientes"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 9.428,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/emprestimo/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:04:03 GMT"
+						}
+					],
+					"content": {
+						"size": 69,
+						"mimeType": "application/json",
+						"text": "{\"id\":1,\"valorEmprestimo\":3000.0,\"qtdParcelas\":12,\"dataPagamento\":25}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 9.428,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Listar por Id"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 11.558,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/emprestimo",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:04:19 GMT"
+						}
+					],
+					"content": {
+						"size": 208,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"valorEmprestimo\":3000.0,\"qtdParcelas\":12,\"dataPagamento\":25},{\"id\":2,\"valorEmprestimo\":5000.0,\"qtdParcelas\":6,\"dataPagamento\":25},{\"id\":3,\"valorEmprestimo\":300.0,\"qtdParcelas\":6,\"dataPagamento\":25}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 11.558,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Lista Todos Emprestimos"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 11.91,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/emprestimo/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"valorEmprestimo\":300,\n\t\"qtdParcelas\":6,\n\t\"dataPagamento\":25\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 20:04:16 GMT"
+						}
+					],
+					"content": {
+						"size": 67,
+						"mimeType": "application/json",
+						"text": "{\"id\":3,\"valorEmprestimo\":300.0,\"qtdParcelas\":6,\"dataPagamento\":25}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 11.91,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar/Fazer Emprestimo"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 132.243,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:8080/api/recarga/create/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\t\"numero\": \"2525-2525\",\n\t\t\"valor\": 150.0,\n\t\t\"operadora\": \"FOURCALL\"\n\t}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 19:59:04 GMT"
+						}
+					],
+					"content": {
+						"size": 66,
+						"mimeType": "application/json",
+						"text": "{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 132.243,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Criar/Fazer Recarga"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 43.449,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/recarga/recargas/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 19:57:42 GMT"
+						}
+					],
+					"content": {
+						"size": 193,
+						"mimeType": "application/json",
+						"text": "[{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 43.449,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Lista Recarga por Conta"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 16.182,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/recarga",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 19:59:08 GMT"
+						}
+					],
+					"content": {
+						"size": 449,
+						"mimeType": "application/json",
+						"text": "[{\"id\":1,\"numero\":\"1234-5678\",\"valor\":100.0,\"operadora\":null},{\"id\":2,\"numero\":\"1234-5678\",\"valor\":100.0,\"operadora\":\"CLARO\"},{\"id\":3,\"numero\":\"1234-5678\",\"valor\":100.0,\"operadora\":\"CLARO\"},{\"id\":4,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":5,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":6,\"numero\":\"91234-5678\",\"valor\":100.0,\"operadora\":\"VIVO\"},{\"id\":7,\"numero\":\"2525-2525\",\"valor\":150.0,\"operadora\":\"FOURCALL\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 16.182,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Lista Recarga"
+			},
+			{
+				"startedDateTime": "2022-02-22T21:49:38.834Z",
+				"time": 8.6,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:8080/api/recarga/recargas/1231123123",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 404,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Length",
+							"value": "0"
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 22 Feb 2022 19:48:17 GMT"
+						}
+					],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 8.6,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "http://localhost:8080/api/clientes"
+			}
+		]
+	}
+}
